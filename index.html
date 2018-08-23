@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Corporate Buissness: A stock trading game</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>    
+</head>
+<body style="color: black;">
+    <div class="container">
+        <h1>Money: $<a id="money"></a></h1>
+        <div id="googol_bar">
+            <h3>Googol <a id="googol_percent_change"></a>%</h3>
+            <p>
+                Cost Per Share: <a id="cost_per_googol_share"></a>
+                Stocks Owned: <a id="stocks_owned_of_googol"></a>
+                Market Cap: <a id="googol_revenue"></a>
+                Total Number of Shares: <a id="total_stocks_googol"></a>
+                <button onclick="sell('googol')">-</button>
+                <input type="text" placeholder="Shares" class="text" id="shares_wanted_googol">
+                <button onclick="invest('googol')">+</button>
+            </p>
+        </div>
+        <div id="french_express_bar">
+            <h3>French Express</h3>
+            <p>
+                Cost Per Share: <a id="cost_per_french_express_share"></a>
+                Stocks Owned: <a id="stocks_owned_of_french_express"></a>
+                Div Payout <a id="dividen_payout_french_express"></a>
+                Div Yeild: <a id="div_yeild_of_french_express"></a>                
+                Market Cap: <a id="french_express_revenue"></a>
+                Total Number of Shares: <a id="total_stocks_french_express"></a>
+                <button onclick="sell('french_express')">-</button>
+                <input type="text" placeholder="Shares" class="text" id="shares_wanted_french_express">
+                <button onclick="invest('french_express')">+</button>
+            </p>
+        </div>  
+        <button onclick="next_day()">Net Day</button>
+    </div>
+</body>
+<script src="functions.js" type="text/javascript"></script>
+<link href="style.css" type="text/css" rel="stylesheet">    
+</html>
